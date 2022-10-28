@@ -1,0 +1,20 @@
+# permissions for end users to view pitmasters.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: pitmaster-viewer-role
+rules:
+- apiGroups:
+  - racing.b4mad.net
+  resources:
+  - pitmasters
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - racing.b4mad.net
+  resources:
+  - pitmasters/status
+  verbs:
+  - get

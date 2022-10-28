@@ -1,0 +1,8 @@
+apiVersion: racing.b4mad.net/v1alpha1
+kind: Pitmaster
+metadata:
+  name: pitmaster-sample
+spec:
+  crewchirefUsernames:
+    - durandom
+    - goern
